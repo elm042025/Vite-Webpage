@@ -11,12 +11,21 @@
          name="viewport"
          content="width=device-width, initial-scale=1.0"
       />
-      <script src="https://cdn.jsdelivr.net/npm/webgl-fluid@0.3"></script>
+
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
       <title>Vite App</title>
-     <script type="module" crossorigin src="/Vite-Webpage/assets/index-B39qmGrt.js"></script>
-     <link rel="stylesheet" crossorigin href="/Vite-Webpage/assets/index-DAT2U0jo.css">
+      <script type="importmap">
+         {
+            "imports": {
+               "webgl-fluid": "https://cdn.jsdelivr.net/npm/webgl-fluid@0.3/dist/webgl-fluid.mjs"
+            }
+         }
+      </script>
+     <script type="module" crossorigin src="/Vite-Webpage/assets/index-DscmsEZX.js"></script>
+     <link rel="stylesheet" crossorigin href="/Vite-Webpage/assets/index-CUiCcYNz.css">
    </head>
    <body>
       <canvas id="wallpaper"></canvas>
+      <h1 id="typed-output"></h1>
    </body>
 </html>
