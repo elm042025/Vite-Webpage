@@ -1,17 +1,17 @@
 import WebGLFluid from "webgl-fluid";
 
 WebGLFluid(document.querySelector("canvas"), {
-   TRIGGER: "hover",
-   IMMEDIATE: true,
-   AUTO: false,
-   INTERVAL: 3000,
+   TRIGGER: "hover", // can be "click"
+   IMMEDIATE: true, // auto on initialization
+   AUTO: false, // Whether to enable auto-splatting
+   INTERVAL: 3000, // time delay in milliseconds between splatting
    SIM_RESOLUTION: 256,
    DYE_RESOLUTION: 1024,
-   CAPTURE_RESOLUTION: 512,
+   CAPTURE_RESOLUTION: 256,
    DENSITY_DISSIPATION: 1,
    VELOCITY_DISSIPATION: 0.2,
-   PRESSURE: 0.8,
-   PRESSURE_ITERATIONS: 20,
+   PRESSURE: 0.2,
+   PRESSURE_ITERATIONS: 10,
    CURL: 30,
    SPLAT_RADIUS: 0.1,
    SPLAT_FORCE: 6000,
@@ -22,7 +22,7 @@ WebGLFluid(document.querySelector("canvas"), {
    PAUSED: false,
    BACK_COLOR: { r: 0, g: 0, b: 0 },
    TRANSPARENT: false,
-   BLOOM: false,
+   BLOOM: false, // if true = background color will whitened by 13 on each RGB color | false = pure color
    BLOOM_ITERATIONS: 8,
    BLOOM_RESOLUTION: 256,
    BLOOM_INTENSITY: 0.8,
