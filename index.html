@@ -15,7 +15,13 @@
          rel="stylesheet"
          href="./src/style.css"
       />
-      <script src="https://cdn.jsdelivr.net/npm/webgl-fluid@0.3"></script>
+      <script type="importmap">
+         {
+            "imports": {
+               "webgl-fluid": "https://cdn.jsdelivr.net/npm/webgl-fluid@0.3/dist/webgl-fluid.mjs"
+            }
+         }
+      </script>
       <script
          type="module"
          src="./src/main.js"
