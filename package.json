@@ -16,6 +16,7 @@
       "vite": "^7.0.4"
    },
    "dependencies": {
+      "typed.js": "^2.1.0",
       "webgl-fluid": "^0.3.9"
    }
 }

@@ -1,5 +1,6 @@
 import WebGLFluid from "webgl-fluid";
-
+// import Typed from "typed.js";
+//! ----- background that is just pure eye candy ----- //
 WebGLFluid(document.querySelector("canvas"), {
    TRIGGER: "hover", // can be "click"
    IMMEDIATE: true, // auto on initialization
@@ -31,4 +32,24 @@ WebGLFluid(document.querySelector("canvas"), {
    SUNRAYS: true,
    SUNRAYS_RESOLUTION: 196,
    SUNRAYS_WEIGHT: 1.0,
+});
+//! ----- npm package that renders text in a beautiful way ----- //
+// import Typed from "typed.js";
+window.addEventListener("DOMContentLoaded", () => {
+   const options = {
+      strings: [
+         "Welcome to My Fluid WebGL Demo!",
+         "Check out the cool typing effect.",
+         "Built with Vite + npm + ❤️",
+         " Feel free to hover the cursor for as long as you want 😉",
+      ],
+      typeSpeed: 60,
+      backSpeed: 30,
+      loop: true,
+      smartBackspace: true,
+      showCursor: true,
+      cursorChar: "|",
+   };
+
+   new Typed("#typed-output", options);
 });
