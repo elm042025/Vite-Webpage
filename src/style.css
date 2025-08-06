@@ -16,12 +16,13 @@ canvas {
 h1#typed-output {
    position: absolute;
    top: 30px;
-   width: 100vw;
+   width: 90vw;
    text-align: center;
-   font-size: 2.5rem;
+   font-size: 1.5rem;
+   font-weight: 500;
    color: #fff;
    text-shadow: 0 0 10px #111, 0 0 30px #333;
    z-index: 10;
    pointer-events: none;
-   font-family: "JetBrains Mono", "Fira Mono", "Consolas", monospace;
+   font-family: "Poppins", sans-serif;
 }
