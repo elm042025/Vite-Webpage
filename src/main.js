@@ -46,7 +46,7 @@ window.addEventListener("DOMContentLoaded", () => {
          "For as long as you want 😉",
       ],
       typeSpeed: 60,
-      backSpeed: 30,
+      backSpeed: 60,
       loop: true,
       smartBackspace: true,
       showCursor: true,
